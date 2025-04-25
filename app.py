@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from Head.RealasticSpeak import speak
+from Head.NewSpeak import speak
 from models.ai import Ai
 
 app = Flask(__name__)

@@ -18,7 +18,7 @@ def Ai(prompt):
     add_messages("user", prompt)
     chat_completion = client.chat.completions.create(
         messages=messages,
-        model="llama3-70b-8192"
+        model="mixtral-8x7b-32768"
     )
 
     response = chat_completion.choices[0].message.content
